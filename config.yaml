@@ -1,6 +1,6 @@
-baseURL: "https://arkalim.org"
+baseURL: "https://mapuekyle.com"
 languageCode: en-us
-title: Abdur Rahman
+title: Kyle Mapue
 theme: PaperMod
 
 menu:
@@ -13,18 +13,18 @@ menu:
       name: Blog
       url: /blog
       weight: 20
-    - identifier: projects
-      name: Projects
-      url: /projects
-      weight: 30
-    - identifier: experience
-      name: Experience
-      url: /experience
-      weight: 40
-    - identifier: search
-      name: Search
-      url: /search
-      weight: 50
+    # - identifier: projects
+    #   name: Projects
+    #   url: /projects
+    #   weight: 30
+    # - identifier: experience
+    #   name: Experience
+    #   url: /experience
+    #   weight: 40
+    # - identifier: search
+    #   name: Search
+    #   url: /search
+    #   weight: 50
     # - identifier: tags
     #   name: Tags
     #   url: /tags
@@ -41,21 +41,28 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   hideMeta: false
+  label:
+    text: "Kyle Mapue"
+    icon: "images/coding.png"
+    iconHeight: 35
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "images/favicon.ico"
 
   # for enchanced SEO
   env: production
 
+  
+
   # Home Page
   profileMode:
     enabled: true
-    title: "Abdur Rahman"
-    subtitle: Hi 👋! I'm Abdur, an ambitious DevOps Intern at [**16Bit.ai**](https://www.16bit.ai), an innovative healthcare startup in Toronto. Currently pursuing my [**MSc in Applied Computing**](https://mscac.utoronto.ca/) at the esteemed University of Toronto, I bring a solid foundation in Software Engineering with professional experience. I am captivated by the realm of Cloud Computing and DevOps practices, seeking to revolutionize how we deploy applications in the modern era. To enhance my expertise, I have also obtained AWS associate-level certifications as a Solutions Architect and Developer, further bolstering my skills in the cloud computing domain. My unwavering curiosity and drive push me to explore fresh avenues to redefine technological frontiers. During my leisure hours, I channel my creativity into crafting engaging YouTube 🎬 videos, where I share my journey as an international student in Canada 🇨🇦.
-    imageUrl: "home/formal-pic-small.jpeg"
-    imageWidth: 220
-    imageHeight: 220
+    title: "Welcome! \U0001F44B"
+    subtitle: Hi 👋! I'm **Kyle Mapue**, an ambitious DevOps at [**Globe Telecom**](https://globe.com.ph), a national Telecom giant. I love the intricacies of how structures work and that's why I am fascinated with Cloud Computing and DevOps practices!
     # buttons:
-    #   - name: Resume
-    #     url: ""
+    #   - name: CVterminal
+    #     url: "https://cv-terminal-kyle.netlify.app"
 
   # List View
   hideDescriptionInList: false
@@ -67,15 +74,15 @@ params:
 
   socialIcons:
     - name: "email"
-      url: "mailto:abdur.rahman.kalim@gmail.com"
+      url: "kyle.mapue@gmail.com"
     - name: "linkedin"
-      url: "https://www.linkedin.com/in/abdurrahmankalim"
+      url: "https://www.linkedin.com/in/kyle-mapue-a06938212/"
     - name: "github"
-      url: "https://github.com/arkalim"
-    - name: "youtube"
-      url: "https://www.youtube.com/c/AbdurRahmanKalim"
+      url: "https://github.com/kylemaps"
     - name: "cv"
-      url: "https://drive.google.com/file/d/1U6Gg2RnHSCthtWLbZJBlAEI3V1WGjZty/view"
+      url: "https://drive.google.com/file/d/1upHaeuLTg-v_wN0AuDwKAyvBmehmQYze/view?usp=sharing"
+    - name: "project"
+      url: "https://cv-terminal-kyle.netlify.app"
 
   # text search
   fuseOpts:
