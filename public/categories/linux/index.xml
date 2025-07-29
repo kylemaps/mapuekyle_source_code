@@ -14,7 +14,6 @@
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/devops-with-docker/</guid>
       <description>&lt;p&gt;&lt;em&gt;Study material from &lt;a href=&#34;https://devopswithdocker.com/&#34;&gt;devopswithdocker.com&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;h1 id=&#34;my-devops-with-docker-journey-a-learning-log&#34;&gt;My DevOps with Docker Journey: A Learning Log&lt;/h1&gt;
 &lt;p&gt;Embarking on a journey through the world of DevOps, my focus has been on mastering Docker and its ecosystem. This blog post serves as a quick recap of the key learnings and concepts explored across various exercises and chapters in my study.&lt;/p&gt;
 &lt;h2 id=&#34;chapter-1-docker-fundamentals---building-blocks-of-containerization&#34;&gt;Chapter 1: Docker Fundamentals - Building Blocks of Containerization&lt;/h2&gt;
 &lt;p&gt;Chapter 1 laid the groundwork, focusing on the absolute essentials of Docker. This is where we learned to craft &lt;code&gt;Dockerfile&lt;/code&gt;s – the blueprints for our containerized applications.&lt;/p&gt;</description>
