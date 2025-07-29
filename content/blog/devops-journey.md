@@ -1,15 +1,11 @@
 ---
-title: "My DevOps Journey: Building a Static Website"
-date: "2023-7-1"
+title: "The Story of This Very Website"
+date: "2024-11-11"
 author: "Kyle Mapue"
 categories:
-  - "oc"
-  - "cloud-internet"
-  - "linux"
-cover:
-    image: "/blog/devops-journey/gear.png"
-    alt: "featured image"
-    relative: false
+  - "devops"
+  - "container"
+  - "docker"
 ---
 
 # Introduction
@@ -80,13 +76,13 @@ Below are the steps I took based on the outline of the steps for the challenge.
 
 # Cost
 
-In my setup, I'm spending $66/year on my site and the surrounding infrastructure.
+In my setup, I'm spending $84/year on my site and the surrounding infrastructure.
 
 | Product              | Cost (per year)     |
 |----------------------|---------------------|
 | Domain (NameCheap)   | $12                 |
 | DNS (Cloudflare)     | Free                |
-| VPS (DigitalOcean)   | $48                 |
+| VPS (DigitalOcean)   | $72                 |
 
 
 # Conclusion

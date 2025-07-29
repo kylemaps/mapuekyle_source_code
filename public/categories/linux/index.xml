@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>linux on Kyle Mapue</title>
-    <link>https://mapuekyle.com/categories/linux/</link>
-    <description>Recent content in linux on Kyle Mapue</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://mapuekyle.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <title>Linux on Kyle Mapue</title>
+    <link>http://localhost:1313/categories/linux/</link>
+    <description>Recent content in Linux on Kyle Mapue</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My DevOps Journey: Building a Static Website</title>
-      <link>https://mapuekyle.com/blog/devops-journey/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mapuekyle.com/blog/devops-journey/</guid>
-      <description>Introduction As a passionate individual eager to delve into the world of DevOps, I found myself facing a common question: &amp;ldquo;What is a good beginner project to gain practical experience?&amp;rdquo; After exploring various resources and communities, I stumbled upon an insightful blog post titled &amp;ldquo;The Best DevOps Project for a Beginner&amp;rdquo; by Logan Marchione. Inspired by his guidance, I embarked on an exciting journey to build my own static website, and I would like to share my personal experience and lessons learned along the way.</description>
+      <title>My DevOps with Docker Journey: A Learning Log</title>
+      <link>http://localhost:1313/blog/devops-with-docker/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/devops-with-docker/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Study material from &lt;a href=&#34;https://devopswithdocker.com/&#34;&gt;devopswithdocker.com&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;my-devops-with-docker-journey-a-learning-log&#34;&gt;My DevOps with Docker Journey: A Learning Log&lt;/h1&gt;
+&lt;p&gt;Embarking on a journey through the world of DevOps, my focus has been on mastering Docker and its ecosystem. This blog post serves as a quick recap of the key learnings and concepts explored across various exercises and chapters in my study.&lt;/p&gt;
+&lt;h2 id=&#34;chapter-1-docker-fundamentals---building-blocks-of-containerization&#34;&gt;Chapter 1: Docker Fundamentals - Building Blocks of Containerization&lt;/h2&gt;
+&lt;p&gt;Chapter 1 laid the groundwork, focusing on the absolute essentials of Docker. This is where we learned to craft &lt;code&gt;Dockerfile&lt;/code&gt;s – the blueprints for our containerized applications.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

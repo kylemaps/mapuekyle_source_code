@@ -13,26 +13,7 @@ menu:
       name: Blog
       url: /blog
       weight: 20
-    # - identifier: projects
-    #   name: Projects
-    #   url: /projects
-    #   weight: 30
-    # - identifier: experience
-    #   name: Experience
-    #   url: /experience
-    #   weight: 40
-    # - identifier: search
-    #   name: Search
-    #   url: /search
-    #   weight: 50
-    # - identifier: tags
-    #   name: Tags
-    #   url: /tags
-    #   weight: 60
-    # - identifier: notes
-    #   name: Notes
-    #   url: https://notes.arkalim.org
-    #   weight: 70
+    
 
 params:
   # theme
@@ -59,7 +40,7 @@ params:
   profileMode:
     enabled: true
     title: "Welcome! \U0001F44B"
-    subtitle: Hi 👋! I'm **Kyle Mapue**, an ambitious DevOps at [**Globe Telecom**](https://globe.com.ph), a national Telecom giant. I love the intricacies of how structures work and that's why I am fascinated with Cloud Computing and DevOps practices!
+    subtitle: Hi 👋! I'm **Kyle Mapue**, a DevOps professional based in Brisbane, Australia, currently seeking exciting new opportunities. I love the intricacies of how structures work and that's why I am fascinated with Cloud Computing and DevOps practices!
     # buttons:
     #   - name: CVterminal
     #     url: "https://cv-terminal-kyle.netlify.app"
@@ -72,15 +53,15 @@ params:
     hiddenInList: false # hide on list pages and home
     hiddenInSingle: false # hide on single page
 
-  socialIcons:
+  social:
     - name: "email"
-      url: "kyle.mapue@gmail.com"
+      url: "mailto:kyle.mapue@gmail.com"
     - name: "linkedin"
       url: "https://www.linkedin.com/in/kyle-mapue-a06938212/"
     - name: "github"
       url: "https://github.com/kylemaps"
     - name: "cv"
-      url: "https://drive.google.com/file/d/1upHaeuLTg-v_wN0AuDwKAyvBmehmQYze/view?usp=sharing"
+      url: "https://drive.google.com/file/d/1ZNRNHHt2Ig4htt64jesshI8URsVdi_r-/view?usp=sharing"
     - name: "project"
       url: "https://cv-terminal-kyle.netlify.app"
 

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>My DevOps with Docker Journey: A Learning Log | Kyle Mapue</title>
+<meta name="keywords" content="">
+<meta name="description" content="Study material from devopswithdocker.com.
+Embarking on a journey through the world of DevOps, my focus has been on mastering Docker and its ecosystem. This blog post serves as a quick recap of the key learnings and concepts explored across various exercises and chapters in my study.
+Chapter 1: Docker Fundamentals - Building Blocks of Containerization
+Chapter 1 laid the groundwork, focusing on the absolute essentials of Docker. This is where we learned to craft Dockerfiles – the blueprints for our containerized applications.">
+<meta name="author" content="Kyle Mapue">
+<link rel="canonical" href="http://localhost:1313/blog/devops-with-docker/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8943a90491e468f6ef8d33a5ef0a5845622d5178e663849217af60f670605c5b.css" integrity="sha256-iUOpBJHkaPbvjTOl7wpYRWItUXjmY4SSF69g9nBgXFs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/devops-with-docker/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/blog/devops-with-docker/">
+  <meta property="og:site_name" content="Kyle Mapue">
+  <meta property="og:title" content="My DevOps with Docker Journey: A Learning Log">
+  <meta property="og:description" content="Study material from devopswithdocker.com.
+Embarking on a journey through the world of DevOps, my focus has been on mastering Docker and its ecosystem. This blog post serves as a quick recap of the key learnings and concepts explored across various exercises and chapters in my study.
+Chapter 1: Docker Fundamentals - Building Blocks of Containerization Chapter 1 laid the groundwork, focusing on the absolute essentials of Docker. This is where we learned to craft Dockerfiles – the blueprints for our containerized applications.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2023-07-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-07-01T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="My DevOps with Docker Journey: A Learning Log">
+<meta name="twitter:description" content="Study material from devopswithdocker.com.
+Embarking on a journey through the world of DevOps, my focus has been on mastering Docker and its ecosystem. This blog post serves as a quick recap of the key learnings and concepts explored across various exercises and chapters in my study.
+Chapter 1: Docker Fundamentals - Building Blocks of Containerization
+Chapter 1 laid the groundwork, focusing on the absolute essentials of Docker. This is where we learned to craft Dockerfiles – the blueprints for our containerized applications.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "http://localhost:1313/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "My DevOps with Docker Journey: A Learning Log",
+      "item": "http://localhost:1313/blog/devops-with-docker/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "My DevOps with Docker Journey: A Learning Log",
+  "name": "My DevOps with Docker Journey: A Learning Log",
+  "description": "Study material from devopswithdocker.com.\nEmbarking on a journey through the world of DevOps, my focus has been on mastering Docker and its ecosystem. This blog post serves as a quick recap of the key learnings and concepts explored across various exercises and chapters in my study.\nChapter 1: Docker Fundamentals - Building Blocks of Containerization Chapter 1 laid the groundwork, focusing on the absolute essentials of Docker. This is where we learned to craft Dockerfiles – the blueprints for our containerized applications.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Study material from devopswithdocker.com.\nEmbarking on a journey through the world of DevOps, my focus has been on mastering Docker and its ecosystem. This blog post serves as a quick recap of the key learnings and concepts explored across various exercises and chapters in my study.\nChapter 1: Docker Fundamentals - Building Blocks of Containerization Chapter 1 laid the groundwork, focusing on the absolute essentials of Docker. This is where we learned to craft Dockerfiles – the blueprints for our containerized applications.\nDockerfile Basics: Your First Containerized “Hello World” Let’s start with a simple example from exercise1.10. This Dockerfile creates an image that simply prints “Hello from Docker”.\n# chap1/exercise1.10/Dockerfile FROM alpine CMD echo \"Hello from Docker\" FROM alpine: This instruction specifies the base image for our container. alpine is a lightweight Linux distribution, perfect for minimal images. CMD echo \"Hello from Docker\": This defines the command that will be executed when a container is launched from this image. To build this image, navigate to the exercise1.10 directory and run:\ndocker build -t my-hello-world . Once built, you can run your first container:\ndocker run my-hello-world You should see “Hello from Docker” printed to your console!\nExecuting Scripts within Containers: The improvedcurler Example Many real-world applications involve running scripts. The improvedcurler exercise demonstrated how to include and execute a shell script inside a Docker container.\nFirst, let’s look at the script.sh file:\n# chap1/improvedcurler/script.sh #!/bin/bash echo \"Searching..\"; sleep 1; curl http://$1; And here’s its corresponding Dockerfile:\n# chap1/improvedcurler/Dockerfile FROM alpine COPY script.sh /script.sh RUN chmod +x /script.sh ENTRYPOINT [\"/script.sh\"] COPY script.sh /script.sh: This instruction copies our script.sh file from the host machine into the container’s root directory. RUN chmod +x /script.sh: We need to make the script executable within the container. ENTRYPOINT [\"/script.sh\"]: This sets the primary command for the container. Any arguments passed to docker run will be appended to this entrypoint. For example, docker run improved-curler example.com would execute /script.sh example.com. To build and run this example:\ndocker build -t improved-curler chap1/improvedcurler docker run improved-curler example.com This will attempt to curl example.com from within the container, showcasing how scripts can be integrated and executed.\nIntroduction to Multi-Service Applications While Chapter 1 focused on single-container applications, the Exercises1.11-1.14 directory, with its example-backend, example-frontend, and spring-example-project, hinted at the complexity of real-world applications. These exercises laid the groundwork for understanding the need to containerize multiple interconnected services, a concept we’ll dive deeper into with Docker Compose.\nChapter 2: Docker Compose - Orchestrating Multi-Container Applications Chapter 2 was a deep dive into docker-compose, the tool for defining and running multi-container Docker applications. This chapter was crucial for understanding how to manage complex service architectures efficiently.\nDefining Services with docker-compose.yml: A Simple Web Service Almost every exercise in this chapter revolved around creating and configuring docker-compose.yml files. Let’s look at a basic example from ex2.2 that defines a simple web service:\n# chap2/ex2.2/docker-compose.yml version: '3.8' services: message-server: image: devopsdockeruh/simple-web-service:alpine command: server ports: - 127.0.0.1:8080:8080 version: '3.8': Specifies the Docker Compose file format version. services: Defines the different services that make up your application. Here, we have message-server. image: The Docker image to use for this service. command: Overrides the default command specified in the image’s Dockerfile. ports: Maps a port on your host machine (127.0.0.1:8080) to a port inside the container (8080). This allows you to access the service from your host. To run this service, navigate to the ex2.2 directory and execute:\ndocker compose up Service Intercommunication, Networking, and Volumes: A Full-Stack Example Real-world applications often consist of multiple interconnected services, such as a frontend, backend, and database. ex2.7 provides a great example of how Docker Compose facilitates this intercommunication:\n# chap2/ex2.7/docker-compose.yml version: '3.8' services: frontend: image: frontend:latest ports: - 127.0.0.1:5000:5000 backend: image: backend:latest ports: - 127.0.0.1:8080:8080 environment: - REDIS_HOST=redis # Use the Redis service name - POSTGRES_HOST=db depends_on: - redis # Ensure Redis starts before the backend - db redis: image: redis:8.0-M02-alpine restart: unless-stopped db: image: postgres:13.2-alpine restart: unless-stopped environment: POSTGRES_PASSWORD: postgres container_name: db_postgres volumes: - ./database:/var/lib/postgresql/data Key concepts demonstrated here:\nService Discovery: Services within the same Docker Compose network can communicate with each other using their service names (e.g., backend can reach redis and db by their names). environment: Sets environment variables within the container, crucial for configuring applications (e.g., database connection strings). depends_on: Ensures that services start in a specific order. Here, backend will only start after redis and db are running. volumes: Mounts a host path (./database) into the container (/var/lib/postgresql/data). This is essential for persistent data storage, ensuring your database data isn’t lost when containers are removed. restart: unless-stopped: Configures the container to restart automatically unless explicitly stopped. To bring up this multi-service application:\ndocker compose up Scaling and Load Balancing The scaling-exercise and whoamiscale directories were key to understanding how to scale services horizontally and distribute traffic among them, a core DevOps practice. While docker-compose itself has basic scaling capabilities (docker compose up --scale service_name=N), more advanced load balancing and scaling often involve external tools or orchestrators like Kubernetes, which build upon these fundamental concepts.\nThis chapter solidified the understanding of how to define, link, and manage complex multi-container applications, laying the groundwork for robust DevOps practices.\nChapter 3: Advanced Docker \u0026 Deployment Patterns Chapter 3 moved beyond basic orchestration into more advanced topics, touching upon build processes, CI/CD considerations, and more complex deployment scenarios.\nAutomated Builds: The builder.sh Script Automating the Docker image build process is a crucial step towards Continuous Integration (CI). The builder.sh script in ex3.3 provides a great example of how to automate building and pushing Docker images to a registry like Docker Hub.\n# chap3/ex3.3/builder.sh #!/bin/bash # Check if the correct number of arguments is passed if [ \"$#\" -ne 2 ]; then echo \"Usage: $0 \" echo \"Example: $0 mluukkai/express_app mluukkai/testing\" exit 1 fi # Parse arguments GITHUB_REPO=$1 DOCKERHUB_REPO=$2 # Extract the repo name from the GitHub URL REPO_NAME=$(basename \"$GITHUB_REPO\") # Step 1: Clone the GitHub repository echo \"Cloning repository https://github.com/$GITHUB_REPO...\" git clone \"https://github.com/$GITHUB_REPO.git\" || { echo \"Failed to clone the repository\"; exit 1; } # Step 2: Change into the cloned repository directory cd \"$REPO_NAME\" || { echo \"Failed to access the repository directory\"; exit 1; } # Step 3: Build the Docker image echo \"Building Docker image $DOCKERHUB_REPO...\" docker build -t \"$DOCKERHUB_REPO\" . || { echo \"Failed to build the Docker image\"; exit 1; } # Step 4: Push the Docker image to Docker Hub echo \"Logging into Docker Hub...\" docker login || { echo \"Docker login failed\"; exit 1; } echo \"Pushing Docker image to Docker Hub...\" docker push \"$DOCKERHUB_REPO\" || { echo \"Failed to push the Docker image\"; exit 1; } # Step 5: Cleanup (optional) cd .. echo \"Cleaning up...\" rm -rf \"$REPO_NAME\" echo \"Done! The Docker image is available at Docker Hub: $DOCKERHUB_REPO\" This script automates the entire process: cloning a Git repository, building a Docker image from its contents, logging into Docker Hub, pushing the image, and finally cleaning up. This is a fundamental pattern in CI/CD pipelines.\nScripted Container Execution: Running Tasks within Docker ex3.4 demonstrates how to create a Docker image that executes a specific script upon startup. This is useful for running automated tasks, cron jobs, or one-off operations within a controlled environment.\nHere’s the Dockerfile from ex3.4:\n# chap3/ex3.4/Dockerfile FROM docker:latest RUN apk add --no-cache bash WORKDIR /app COPY script.sh /app/script.sh RUN chmod +x /app/script.sh ENTRYPOINT [\"/app/script.sh\"] And the script.sh it uses:\n# chap3/ex3.4/script.sh #!/bin/bash # Check if the correct number of arguments is passed if [ \"$#\" -ne 2 ]; then echo \"Usage: $0 \" echo \"Example: $0 mluukkai/express_app mluukkai/testing\" exit 1 fi # Parse arguments GITHUB_REPO=$1 DOCKERHUB_REPO=$2 # Extract the repo name from the GitHub URL REPO_NAME=$(basename \"$GITHUB_REPO\") # Step 1: Clone the GitHub repository echo \"Cloning repository https://github.com/$GITHUB_REPO...\" git clone \"https://github.com/$GITHUB_REPO.git\" || { echo \"Failed to clone the repository\"; exit 1; } # Step 2: Change into the cloned repository directory cd \"$REPO_NAME\" || { echo \"Failed to access the repository directory\"; exit 1; } # Step 3: Build the Docker image echo \"Building Docker image $DOCKERHUB_REPO...\" docker build -t \"$DOCKERHUB_REPO\" . || { echo \"Failed to build the Docker image\"; exit 1; } # Step 4: Push the Docker image to Docker Hub echo \"Logging into Docker Hub...\" docker login -u \"$DOCKER_USER\" -p \"$DOCKER_PWD\" || { echo \"Docker login failed\"; exit 1; } echo \"Pushing Docker image to Docker Hub...\" docker push \"$DOCKERHUB_REPO\" || { echo \"Failed to push the Docker image\"; exit 1; } # Step 5: Cleanup (optional) cd .. echo \"Cleaning up...\" rm -rf \"$REPO_NAME\" echo \"Done! The Docker image is available at Docker Hub: $DOCKERHUB_REPO\" This setup allows you to encapsulate a specific task within a Docker image, making it portable and reproducible. You can build this image and run it, passing arguments directly to the script.sh.\nComplex Multi-Service Deployments Exercises like ex3.5 through ex3.8-3.9 continued to build on multi-service applications (example-backend, example-frontend) integrated with docker-compose.yml and nginx.conf. These likely involved more sophisticated configurations for production-like environments, including environment variables, health checks, and advanced networking. These examples showcase how to combine the concepts from previous chapters to create robust and scalable multi-service architectures.\nThis journey has provided a solid foundation in containerization with Docker, from single-service deployments to complex, scalable, multi-container applications, laying the groundwork for robust DevOps practices.\n",
+  "wordCount" : "1551",
+  "inLanguage": "en",
+  "datePublished": "2023-07-01T00:00:00Z",
+  "dateModified": "2023-07-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Kyle Mapue"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/blog/devops-with-docker/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kyle Mapue",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/images/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Kyle Mapue (Alt + H)">
+                <img src="http://localhost:1313/images/coding.png" alt="" aria-label="logo"
+                    height="35">Kyle Mapue</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/blog/">Blogs</a></div>
+    <h1 class="post-title entry-hint-parent">
+      My DevOps with Docker Journey: A Learning Log
+    </h1>
+    <div class="post-meta"><span title='2023-07-01 00:00:00 +0000 UTC'>July 1, 2023</span>&nbsp;·&nbsp;Kyle Mapue
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">‎ Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#chapter-1-docker-fundamentals---building-blocks-of-containerization" aria-label="Chapter 1: Docker Fundamentals - Building Blocks of Containerization">Chapter 1: Docker Fundamentals - Building Blocks of Containerization</a><ul>
+                        
+                <li>
+                    <a href="#dockerfile-basics-your-first-containerized-hello-world" aria-label="Dockerfile Basics: Your First Containerized &ldquo;Hello World&rdquo;">Dockerfile Basics: Your First Containerized &ldquo;Hello World&rdquo;</a></li>
+                <li>
+                    <a href="#executing-scripts-within-containers-the-improvedcurler-example" aria-label="Executing Scripts within Containers: The improvedcurler Example">Executing Scripts within Containers: The improvedcurler Example</a></li>
+                <li>
+                    <a href="#introduction-to-multi-service-applications" aria-label="Introduction to Multi-Service Applications">Introduction to Multi-Service Applications</a></li></ul>
+                </li>
+                <li>
+                    <a href="#chapter-2-docker-compose---orchestrating-multi-container-applications" aria-label="Chapter 2: Docker Compose - Orchestrating Multi-Container Applications">Chapter 2: Docker Compose - Orchestrating Multi-Container Applications</a><ul>
+                        
+                <li>
+                    <a href="#defining-services-with-docker-composeyml-a-simple-web-service" aria-label="Defining Services with docker-compose.yml: A Simple Web Service">Defining Services with docker-compose.yml: A Simple Web Service</a></li>
+                <li>
+                    <a href="#service-intercommunication-networking-and-volumes-a-full-stack-example" aria-label="Service Intercommunication, Networking, and Volumes: A Full-Stack Example">Service Intercommunication, Networking, and Volumes: A Full-Stack Example</a></li>
+                <li>
+                    <a href="#scaling-and-load-balancing" aria-label="Scaling and Load Balancing">Scaling and Load Balancing</a></li></ul>
+                </li>
+                <li>
+                    <a href="#chapter-3-advanced-docker--deployment-patterns" aria-label="Chapter 3: Advanced Docker &amp; Deployment Patterns">Chapter 3: Advanced Docker &amp; Deployment Patterns</a><ul>
+                        
+                <li>
+                    <a href="#automated-builds-the-buildersh-script" aria-label="Automated Builds: The builder.sh Script">Automated Builds: The builder.sh Script</a></li>
+                <li>
+                    <a href="#scripted-container-execution-running-tasks-within-docker" aria-label="Scripted Container Execution: Running Tasks within Docker">Scripted Container Execution: Running Tasks within Docker</a></li>
+                <li>
+                    <a href="#complex-multi-service-deployments" aria-label="Complex Multi-Service Deployments">Complex Multi-Service Deployments</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><em>Study material from <a href="https://devopswithdocker.com/">devopswithdocker.com</a>.</em></p>
+<p>Embarking on a journey through the world of DevOps, my focus has been on mastering Docker and its ecosystem. This blog post serves as a quick recap of the key learnings and concepts explored across various exercises and chapters in my study.</p>
+<h2 id="chapter-1-docker-fundamentals---building-blocks-of-containerization">Chapter 1: Docker Fundamentals - Building Blocks of Containerization<a hidden class="anchor" aria-hidden="true" href="#chapter-1-docker-fundamentals---building-blocks-of-containerization">#</a></h2>
+<p>Chapter 1 laid the groundwork, focusing on the absolute essentials of Docker. This is where we learned to craft <code>Dockerfile</code>s – the blueprints for our containerized applications.</p>
+<h3 id="dockerfile-basics-your-first-containerized-hello-world">Dockerfile Basics: Your First Containerized &ldquo;Hello World&rdquo;<a hidden class="anchor" aria-hidden="true" href="#dockerfile-basics-your-first-containerized-hello-world">#</a></h3>
+<p>Let&rsquo;s start with a simple example from <code>exercise1.10</code>. This <code>Dockerfile</code> creates an image that simply prints &ldquo;Hello from Docker&rdquo;.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#75715e"># chap1/exercise1.10/Dockerfile</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> alpine</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> echo <span style="color:#e6db74">&#34;Hello from Docker&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><ul>
+<li><code>FROM alpine</code>: This instruction specifies the base image for our container. <code>alpine</code> is a lightweight Linux distribution, perfect for minimal images.</li>
+<li><code>CMD echo &quot;Hello from Docker&quot;</code>: This defines the command that will be executed when a container is launched from this image.</li>
+</ul>
+<p>To build this image, navigate to the <code>exercise1.10</code> directory and run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build -t my-hello-world .
+</span></span></code></pre></div><p>Once built, you can run your first container:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run my-hello-world
+</span></span></code></pre></div><p>You should see &ldquo;Hello from Docker&rdquo; printed to your console!</p>
+<h3 id="executing-scripts-within-containers-the-improvedcurler-example">Executing Scripts within Containers: The <code>improvedcurler</code> Example<a hidden class="anchor" aria-hidden="true" href="#executing-scripts-within-containers-the-improvedcurler-example">#</a></h3>
+<p>Many real-world applications involve running scripts. The <code>improvedcurler</code> exercise demonstrated how to include and execute a shell script inside a Docker container.</p>
+<p>First, let&rsquo;s look at the <code>script.sh</code> file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># chap1/improvedcurler/script.sh</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Searching..&#34;</span>;
+</span></span><span style="display:flex;"><span>sleep 1;
+</span></span><span style="display:flex;"><span>curl http://$1;
+</span></span></code></pre></div><p>And here&rsquo;s its corresponding <code>Dockerfile</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#75715e"># chap1/improvedcurler/Dockerfile</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> alpine</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> script.sh /script.sh<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> chmod +x /script.sh<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span> [<span style="color:#e6db74">&#34;/script.sh&#34;</span>]<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><ul>
+<li><code>COPY script.sh /script.sh</code>: This instruction copies our <code>script.sh</code> file from the host machine into the container&rsquo;s root directory.</li>
+<li><code>RUN chmod +x /script.sh</code>: We need to make the script executable within the container.</li>
+<li><code>ENTRYPOINT [&quot;/script.sh&quot;]</code>: This sets the primary command for the container. Any arguments passed to <code>docker run</code> will be appended to this entrypoint. For example, <code>docker run improved-curler example.com</code> would execute <code>/script.sh example.com</code>.</li>
+</ul>
+<p>To build and run this example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build -t improved-curler chap1/improvedcurler
+</span></span><span style="display:flex;"><span>docker run improved-curler example.com
+</span></span></code></pre></div><p>This will attempt to <code>curl</code> <code>example.com</code> from within the container, showcasing how scripts can be integrated and executed.</p>
+<h3 id="introduction-to-multi-service-applications">Introduction to Multi-Service Applications<a hidden class="anchor" aria-hidden="true" href="#introduction-to-multi-service-applications">#</a></h3>
+<p>While Chapter 1 focused on single-container applications, the <code>Exercises1.11-1.14</code> directory, with its <code>example-backend</code>, <code>example-frontend</code>, and <code>spring-example-project</code>, hinted at the complexity of real-world applications. These exercises laid the groundwork for understanding the need to containerize multiple interconnected services, a concept we&rsquo;ll dive deeper into with Docker Compose.</p>
+<h2 id="chapter-2-docker-compose---orchestrating-multi-container-applications">Chapter 2: Docker Compose - Orchestrating Multi-Container Applications<a hidden class="anchor" aria-hidden="true" href="#chapter-2-docker-compose---orchestrating-multi-container-applications">#</a></h2>
+<p>Chapter 2 was a deep dive into <code>docker-compose</code>, the tool for defining and running multi-container Docker applications. This chapter was crucial for understanding how to manage complex service architectures efficiently.</p>
+<h3 id="defining-services-with-docker-composeyml-a-simple-web-service">Defining Services with <code>docker-compose.yml</code>: A Simple Web Service<a hidden class="anchor" aria-hidden="true" href="#defining-services-with-docker-composeyml-a-simple-web-service">#</a></h3>
+<p>Almost every exercise in this chapter revolved around creating and configuring <code>docker-compose.yml</code> files. Let&rsquo;s look at a basic example from <code>ex2.2</code> that defines a simple web service:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># chap2/ex2.2/docker-compose.yml</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.8&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">message-server</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">devopsdockeruh/simple-web-service:alpine</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">command</span>: <span style="color:#ae81ff">server</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">127.0.0.1</span>:<span style="color:#ae81ff">8080</span>:<span style="color:#ae81ff">8080</span>
+</span></span></code></pre></div><ul>
+<li><code>version: '3.8'</code>: Specifies the Docker Compose file format version.</li>
+<li><code>services</code>: Defines the different services that make up your application. Here, we have <code>message-server</code>.</li>
+<li><code>image</code>: The Docker image to use for this service.</li>
+<li><code>command</code>: Overrides the default command specified in the image&rsquo;s Dockerfile.</li>
+<li><code>ports</code>: Maps a port on your host machine (<code>127.0.0.1:8080</code>) to a port inside the container (<code>8080</code>). This allows you to access the service from your host.</li>
+</ul>
+<p>To run this service, navigate to the <code>ex2.2</code> directory and execute:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose up
+</span></span></code></pre></div><h3 id="service-intercommunication-networking-and-volumes-a-full-stack-example">Service Intercommunication, Networking, and Volumes: A Full-Stack Example<a hidden class="anchor" aria-hidden="true" href="#service-intercommunication-networking-and-volumes-a-full-stack-example">#</a></h3>
+<p>Real-world applications often consist of multiple interconnected services, such as a frontend, backend, and database. <code>ex2.7</code> provides a great example of how Docker Compose facilitates this intercommunication:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># chap2/ex2.7/docker-compose.yml</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.8&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">frontend</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">frontend:latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">127.0.0.1</span>:<span style="color:#ae81ff">5000</span>:<span style="color:#ae81ff">5000</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">backend</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">backend:latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">127.0.0.1</span>:<span style="color:#ae81ff">8080</span>:<span style="color:#ae81ff">8080</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">REDIS_HOST=redis </span> <span style="color:#75715e"># Use the Redis service name</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">POSTGRES_HOST=db</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">depends_on</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">redis </span> <span style="color:#75715e"># Ensure Redis starts before the backend</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">db</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">redis</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">redis:8.0-M02-alpine</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">db</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">postgres:13.2-alpine</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">POSTGRES_PASSWORD</span>: <span style="color:#ae81ff">postgres</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">db_postgres</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./database:/var/lib/postgresql/data</span>
+</span></span></code></pre></div><p>Key concepts demonstrated here:</p>
+<ul>
+<li><strong>Service Discovery</strong>: Services within the same Docker Compose network can communicate with each other using their service names (e.g., <code>backend</code> can reach <code>redis</code> and <code>db</code> by their names).</li>
+<li><code>environment</code>: Sets environment variables within the container, crucial for configuring applications (e.g., database connection strings).</li>
+<li><code>depends_on</code>: Ensures that services start in a specific order. Here, <code>backend</code> will only start after <code>redis</code> and <code>db</code> are running.</li>
+<li><code>volumes</code>: Mounts a host path (<code>./database</code>) into the container (<code>/var/lib/postgresql/data</code>). This is essential for persistent data storage, ensuring your database data isn&rsquo;t lost when containers are removed.</li>
+<li><code>restart: unless-stopped</code>: Configures the container to restart automatically unless explicitly stopped.</li>
+</ul>
+<p>To bring up this multi-service application:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose up
+</span></span></code></pre></div><h3 id="scaling-and-load-balancing">Scaling and Load Balancing<a hidden class="anchor" aria-hidden="true" href="#scaling-and-load-balancing">#</a></h3>
+<p>The <code>scaling-exercise</code> and <code>whoamiscale</code> directories were key to understanding how to scale services horizontally and distribute traffic among them, a core DevOps practice. While <code>docker-compose</code> itself has basic scaling capabilities (<code>docker compose up --scale service_name=N</code>), more advanced load balancing and scaling often involve external tools or orchestrators like Kubernetes, which build upon these fundamental concepts.</p>
+<p>This chapter solidified the understanding of how to define, link, and manage complex multi-container applications, laying the groundwork for robust DevOps practices.</p>
+<h2 id="chapter-3-advanced-docker--deployment-patterns">Chapter 3: Advanced Docker &amp; Deployment Patterns<a hidden class="anchor" aria-hidden="true" href="#chapter-3-advanced-docker--deployment-patterns">#</a></h2>
+<p>Chapter 3 moved beyond basic orchestration into more advanced topics, touching upon build processes, CI/CD considerations, and more complex deployment scenarios.</p>
+<h3 id="automated-builds-the-buildersh-script">Automated Builds: The <code>builder.sh</code> Script<a hidden class="anchor" aria-hidden="true" href="#automated-builds-the-buildersh-script">#</a></h3>
+<p>Automating the Docker image build process is a crucial step towards Continuous Integration (CI). The <code>builder.sh</code> script in <code>ex3.3</code> provides a great example of how to automate building and pushing Docker images to a registry like Docker Hub.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># chap3/ex3.3/builder.sh</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check if the correct number of arguments is passed</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$#<span style="color:#e6db74">&#34;</span> -ne <span style="color:#ae81ff">2</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Usage: </span>$0<span style="color:#e6db74"> &lt;github-repo&gt; &lt;dockerhub-repo&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Example: </span>$0<span style="color:#e6db74"> mluukkai/express_app mluukkai/testing&#34;</span>
+</span></span><span style="display:flex;"><span>  exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Parse arguments</span>
+</span></span><span style="display:flex;"><span>GITHUB_REPO<span style="color:#f92672">=</span>$1
+</span></span><span style="display:flex;"><span>DOCKERHUB_REPO<span style="color:#f92672">=</span>$2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extract the repo name from the GitHub URL</span>
+</span></span><span style="display:flex;"><span>REPO_NAME<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>basename <span style="color:#e6db74">&#34;</span>$GITHUB_REPO<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 1: Clone the GitHub repository</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Cloning repository https://github.com/</span>$GITHUB_REPO<span style="color:#e6db74">...&#34;</span>
+</span></span><span style="display:flex;"><span>git clone <span style="color:#e6db74">&#34;https://github.com/</span>$GITHUB_REPO<span style="color:#e6db74">.git&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">{</span> echo <span style="color:#e6db74">&#34;Failed to clone the repository&#34;</span>; exit 1; <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 2: Change into the cloned repository directory</span>
+</span></span><span style="display:flex;"><span>cd <span style="color:#e6db74">&#34;</span>$REPO_NAME<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">{</span> echo <span style="color:#e6db74">&#34;Failed to access the repository directory&#34;</span>; exit 1; <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 3: Build the Docker image</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Building Docker image </span>$DOCKERHUB_REPO<span style="color:#e6db74">...&#34;</span>
+</span></span><span style="display:flex;"><span>docker build -t <span style="color:#e6db74">&#34;</span>$DOCKERHUB_REPO<span style="color:#e6db74">&#34;</span> . <span style="color:#f92672">||</span> <span style="color:#f92672">{</span> echo <span style="color:#e6db74">&#34;Failed to build the Docker image&#34;</span>; exit 1; <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 4: Push the Docker image to Docker Hub</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Logging into Docker Hub...&#34;</span>
+</span></span><span style="display:flex;"><span>docker login <span style="color:#f92672">||</span> <span style="color:#f92672">{</span> echo <span style="color:#e6db74">&#34;Docker login failed&#34;</span>; exit 1; <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Pushing Docker image to Docker Hub...&#34;</span>
+</span></span><span style="display:flex;"><span>docker push <span style="color:#e6db74">&#34;</span>$DOCKERHUB_REPO<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">{</span> echo <span style="color:#e6db74">&#34;Failed to push the Docker image&#34;</span>; exit 1; <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 5: Cleanup (optional)</span>
+</span></span><span style="display:flex;"><span>cd ..
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Cleaning up...&#34;</span>
+</span></span><span style="display:flex;"><span>rm -rf <span style="color:#e6db74">&#34;</span>$REPO_NAME<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Done! The Docker image is available at Docker Hub: </span>$DOCKERHUB_REPO<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>This script automates the entire process: cloning a Git repository, building a Docker image from its contents, logging into Docker Hub, pushing the image, and finally cleaning up. This is a fundamental pattern in CI/CD pipelines.</p>
+<h3 id="scripted-container-execution-running-tasks-within-docker">Scripted Container Execution: Running Tasks within Docker<a hidden class="anchor" aria-hidden="true" href="#scripted-container-execution-running-tasks-within-docker">#</a></h3>
+<p><code>ex3.4</code> demonstrates how to create a Docker image that executes a specific script upon startup. This is useful for running automated tasks, cron jobs, or one-off operations within a controlled environment.</p>
+<p>Here&rsquo;s the <code>Dockerfile</code> from <code>ex3.4</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#75715e"># chap3/ex3.4/Dockerfile</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> docker:latest</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apk add --no-cache bash<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /app</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> script.sh /app/script.sh<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> chmod +x /app/script.sh<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span> [<span style="color:#e6db74">&#34;/app/script.sh&#34;</span>]<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>And the <code>script.sh</code> it uses:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># chap3/ex3.4/script.sh</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check if the correct number of arguments is passed</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$#<span style="color:#e6db74">&#34;</span> -ne <span style="color:#ae81ff">2</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Usage: </span>$0<span style="color:#e6db74"> &lt;github-repo&gt; &lt;dockerhub-repo&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Example: </span>$0<span style="color:#e6db74"> mluukkai/express_app mluukkai/testing&#34;</span>
+</span></span><span style="display:flex;"><span>  exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Parse arguments</span>
+</span></span><span style="display:flex;"><span>GITHUB_REPO<span style="color:#f92672">=</span>$1
+</span></span><span style="display:flex;"><span>DOCKERHUB_REPO<span style="color:#f92672">=</span>$2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extract the repo name from the GitHub URL</span>
+</span></span><span style="display:flex;"><span>REPO_NAME<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>basename <span style="color:#e6db74">&#34;</span>$GITHUB_REPO<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 1: Clone the GitHub repository</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Cloning repository https://github.com/</span>$GITHUB_REPO<span style="color:#e6db74">...&#34;</span>
+</span></span><span style="display:flex;"><span>git clone <span style="color:#e6db74">&#34;https://github.com/</span>$GITHUB_REPO<span style="color:#e6db74">.git&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">{</span> echo <span style="color:#e6db74">&#34;Failed to clone the repository&#34;</span>; exit 1; <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 2: Change into the cloned repository directory</span>
+</span></span><span style="display:flex;"><span>cd <span style="color:#e6db74">&#34;</span>$REPO_NAME<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">{</span> echo <span style="color:#e6db74">&#34;Failed to access the repository directory&#34;</span>; exit 1; <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 3: Build the Docker image</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Building Docker image </span>$DOCKERHUB_REPO<span style="color:#e6db74">...&#34;</span>
+</span></span><span style="display:flex;"><span>docker build -t <span style="color:#e6db74">&#34;</span>$DOCKERHUB_REPO<span style="color:#e6db74">&#34;</span> . <span style="color:#f92672">||</span> <span style="color:#f92672">{</span> echo <span style="color:#e6db74">&#34;Failed to build the Docker image&#34;</span>; exit 1; <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 4: Push the Docker image to Docker Hub</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Logging into Docker Hub...&#34;</span>
+</span></span><span style="display:flex;"><span>docker login -u <span style="color:#e6db74">&#34;</span>$DOCKER_USER<span style="color:#e6db74">&#34;</span> -p <span style="color:#e6db74">&#34;</span>$DOCKER_PWD<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">{</span> echo <span style="color:#e6db74">&#34;Docker login failed&#34;</span>; exit 1; <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Pushing Docker image to Docker Hub...&#34;</span>
+</span></span><span style="display:flex;"><span>docker push <span style="color:#e6db74">&#34;</span>$DOCKERHUB_REPO<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">{</span> echo <span style="color:#e6db74">&#34;Failed to push the Docker image&#34;</span>; exit 1; <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 5: Cleanup (optional)</span>
+</span></span><span style="display:flex;"><span>cd ..
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Cleaning up...&#34;</span>
+</span></span><span style="display:flex;"><span>rm -rf <span style="color:#e6db74">&#34;</span>$REPO_NAME<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Done! The Docker image is available at Docker Hub: </span>$DOCKERHUB_REPO<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>This setup allows you to encapsulate a specific task within a Docker image, making it portable and reproducible. You can build this image and run it, passing arguments directly to the <code>script.sh</code>.</p>
+<h3 id="complex-multi-service-deployments">Complex Multi-Service Deployments<a hidden class="anchor" aria-hidden="true" href="#complex-multi-service-deployments">#</a></h3>
+<p>Exercises like <code>ex3.5</code> through <code>ex3.8-3.9</code> continued to build on multi-service applications (<code>example-backend</code>, <code>example-frontend</code>) integrated with <code>docker-compose.yml</code> and <code>nginx.conf</code>. These likely involved more sophisticated configurations for production-like environments, including environment variables, health checks, and advanced networking. These examples showcase how to combine the concepts from previous chapters to create robust and scalable multi-service architectures.</p>
+<p>This journey has provided a solid foundation in containerization with Docker, from single-service deployments to complex, scalable, multi-container applications, laying the groundwork for robust DevOps practices.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Kyle Mapue</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

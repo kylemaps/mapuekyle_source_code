@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cloud on Kyle Mapue</title>
+    <link>http://localhost:1313/categories/cloud/</link>
+    <description>Recent content in Cloud on Kyle Mapue</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Todo App Journey An Automated Cloud-Native Platform</title>
+      <link>http://localhost:1313/blog/my-todo-app-journey/</link>
+      <pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/my-todo-app-journey/</guid>
+      <description>&lt;h4 id=&#34;introduction-the-project-that-taught-me-everything&#34;&gt;&lt;strong&gt;Introduction: The Project That Taught Me Everything&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;In the world of DevOps, you can read documentation for months, but nothing solidifies your skills like building something real. For me, that &amp;ldquo;something&amp;rdquo; was a seemingly simple Todo application. This project, inspired by the practical challenges presented in &lt;code&gt;devopswithkubernetes.com&lt;/code&gt;, became my personal deep dive into Kubernetes, taking me from the humble beginnings of &lt;code&gt;kubectl apply&lt;/code&gt; on my local machine to orchestrating a state-of-the-art, multi-environment GitOps workflow on Google Kubernetes Engine (GKE).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
