@@ -39,7 +39,7 @@ params:
   # Home Page
   profileMode:
     enabled: true
-    title: "Welcome! \U0001F44B"
+    title: "Welcome! 👋"
     subtitle: Hi 👋! I'm **Kyle Mapue**, a DevOps professional based in Brisbane, Australia, currently seeking exciting new opportunities. I love the intricacies of how structures work and that's why I am fascinated with Cloud Computing and DevOps practices!
     # buttons:
     #   - name: CVterminal
