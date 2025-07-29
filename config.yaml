@@ -24,12 +24,12 @@ params:
   hideMeta: false
   label:
     text: "Kyle Mapue"
-    icon: "images/coding.png"
+    icon: "/images/coding.png"
     iconHeight: 35
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "images/favicon.ico"
+    favicon: "/images/favicon.ico"
 
   # for enchanced SEO
   env: production
@@ -40,7 +40,7 @@ params:
   profileMode:
     enabled: true
     title: "Welcome! 👋"
-    subtitle: Hi 👋! I'm **Kyle Mapue**, a DevOps professional based in Brisbane, Australia, currently seeking exciting new opportunities. I love the intricacies of how structures work and that's why I am fascinated with Cloud Computing and DevOps practices!
+    subtitle: Hi 👋! I'm **Kyle Mapue**, a DevOps professional based in Brisbane, Australia, currently seeking exciting new opportunities. I love the intricacies of how structures work and that's why I am fascinated with Cloud Computing, Automation and DevOps practices!
     # buttons:
     #   - name: CVterminal
     #     url: "https://cv-terminal-kyle.netlify.app"
