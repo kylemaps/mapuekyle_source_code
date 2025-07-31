@@ -2,6 +2,7 @@ baseURL: "https://mapuekyle.com"
 languageCode: en-us
 title: Kyle Mapue
 theme: PaperMod
+contentDir: content
 
 menu:
   main:
