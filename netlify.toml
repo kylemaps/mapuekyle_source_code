@@ -1,9 +1,6 @@
 [build]
   publish = "public"
-  command = "rm -rf /opt/build/cache/hugo_cache && git submodule update --init --recursive --remote --merge && hugo --gc --minify"
+  command = "git submodule update --init --recursive && hugo --gc --minify"
 
 [build.environment]
   HUGO_VERSION = "0.148.1"
-
-[context.deploy-preview]
-  command = "rm -rf /opt/build/cache/hugo_cache && git submodule update --init --recursive --remote --merge && hugo --gc --minify -b $DEPLOY_PRIME_URL"
