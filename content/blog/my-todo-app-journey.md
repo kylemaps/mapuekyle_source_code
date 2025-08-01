@@ -71,8 +71,6 @@ This `serviceMonitor` object is the key. It tells Prometheus how to automaticall
 
 With metrics flowing, the final step was visualization. I port-forwarded to the Grafana service, imported a pre-built NATS dashboard, and was immediately greeted with a real-time overview of my entire messaging infrastructure: CPU and memory usage, message throughput, and active client connections. This isn't just a pretty graph; it's the command center for my application's health.
 
-With metrics flowing, the final step was visualization. I port-forwarded to the Grafana service, imported a pre-built NATS dashboard, and was immediately greeted with a real-time overview of my entire messaging infrastructure: CPU and memory usage, message throughput, and active client connections. This isn't just a pretty graph; it's the command center for my application's health.
-
 #### **Chapter 6: Advanced Deployments - Canary Releases with Automatic Rollback**
 
 Deploying directly to production is risky. To mitigate this, I implemented an advanced **Canary release strategy** using **Argo Rollouts**. This is where the power of the monitoring stack truly shines.
